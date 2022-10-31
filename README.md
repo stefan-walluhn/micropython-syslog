@@ -4,15 +4,6 @@ Log handler to push log messages from micropython to remote syslog server using
 RFC3164 UDP protocol. Be aware that UDP does not guarantee delivery of log
 messages.
 
-## Prerequisites
-
-This handler has to be used with micropython logging package.
-
-
-```
-mpremote mip install logging
-```
-
 ## Installation
 
 ```
