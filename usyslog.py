@@ -2,7 +2,7 @@ import usocket as socket
 
 
 class Severity:
-    CRITICAL = 2
+    CRIT = 2
     ERROR = 3
     WARN = 4
     INFO = 6
