@@ -39,12 +39,11 @@ class Facility:
 class SyslogMessage:
     @classmethod
     def from_record(cls, record, facility):
-        return cls(record.message,
-                   severity=getattr(Severity, record.levelname),
-                   facility=Facility.LOCAL0)
+        return cls(
+            record.message, getattr(Severity, record.levelname), facility
+        )
 
-    def __init__(self, message,
-                 severity=Severity.DEBUG, facility=Facility.LOCAL0):
+    def __init__(self, message, severity, facility):
         self.message = message
         self.severity = severity
         self.facility = facility
